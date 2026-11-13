@@ -8,3 +8,7 @@ body>header,body>footer{flex-shrink:0}
 #albums{min-height:174px}
 .cover{overflow:hidden;border-radius:24px}
 @media(max-width:760px){.intro{min-height:0}.intro>div{min-height:0}}
+
+/* Match loading and empty card geometry from the first paint. */
+#albums{display:flow-root;min-height:174px}
+#albums>.empty{min-height:154px;margin:20px 0 0}
