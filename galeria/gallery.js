@@ -9,7 +9,7 @@ function asset(path){if(typeof path!=='string'||!/^\.\.\/assets\/[a-zA-Z0-9_./-]
 function dateLabel(value){const d=new Date(value+'T12:00:00');return Number.isNaN(d.getTime())?value:new Intl.DateTimeFormat('pt-PT',{day:'numeric',month:'long',year:'numeric'}).format(d)}
 
 const albumData=fetch('albums.json').then(r=>{if(!r.ok)throw Error('load');return r.json()});
-function renderAlbums(data){list.replaceChildren();list.className='';detail.replaceChildren();detail.hidden=true;
+function renderAlbums(data){if(!data.albums.some(a=>a.topic===topic)&&!new URLSearchParams(location.search).has('album')){detail.replaceChildren();detail.hidden=true;if(list.querySelector('.empty strong')?.textContent==='Novos álbuns em breve')return;list.className='';list.innerHTML="<div class=\"empty\"><strong>Novos álbuns em breve</strong><p>As fotografias dos nossos encontros serão partilhadas aqui, organizadas por evento e data.</p></div>";return}list.replaceChildren();list.className='';detail.replaceChildren();detail.hidden=true;
 
 const albums=data.albums.filter(a=>a.topic===topic).sort((a,b)=>b.date.localeCompare(a.date));
 const selected=new URLSearchParams(location.search).get('album');
