@@ -11,3 +11,17 @@
 #mural{background:#edf1e880}.community-section a:focus-visible,.photo-button:focus-visible{outline:3px solid #d7b777;outline-offset:4px}
 @media(max-width:760px){.gallery-entry{grid-template-columns:1fr}.gallery-entry>img{height:220px}.gallery-entry-copy{padding:24px}.community-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.community-section{padding:38px 0}}
 @media(max-width:480px){.community-grid{grid-template-columns:1fr}}
+
+/* A richer companion panel for the gallery image. */
+.gallery-entry{align-items:stretch;border-color:#173b3220;box-shadow:0 18px 40px #173b321c}
+.gallery-entry>img{height:100%;min-height:340px}
+.gallery-entry-copy{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:34px 38px;background:radial-gradient(ellipse at 100% 0%,#d7ec9114,transparent 60%),linear-gradient(135deg,#173b32,#235646);color:#fff}
+.gallery-entry-copy::after{content:"";position:absolute;z-index:-1;right:-65px;top:-85px;width:210px;height:210px;border:1px solid #d7ec9133;border-radius:50%;box-shadow:0 0 0 28px #ffffff05,0 0 0 56px #ffffff04}
+.gallery-entry-icon{display:grid;place-items:center;width:48px;height:48px;border:1px solid #d7ec9145;border-radius:15px;background:#d7ec9115;color:#d7ec91;margin-bottom:18px}
+.gallery-entry-icon svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.gallery-entry-kicker{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#d7ec91;margin-bottom:10px}
+.gallery-entry-copy h3{color:#fff;font-size:clamp(1.45rem,2.4vw,1.9rem);max-width:360px}
+.gallery-entry-copy p{color:#dce7dd;max-width:390px;font-size:.94rem}
+.gallery-entry-copy .btn{background:#e0ecbd;color:#173b32;border-color:transparent;box-shadow:0 5px 16px #071d1725}
+@media(hover:hover){.gallery-entry:hover .btn{background:#edf4d8}}
+@media(max-width:760px){.gallery-entry>img{height:240px;min-height:0}.gallery-entry-copy{padding:28px}.gallery-entry-icon{margin-bottom:14px}}
