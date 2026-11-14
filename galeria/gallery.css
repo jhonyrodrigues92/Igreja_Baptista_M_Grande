@@ -13,7 +13,14 @@ body>header,body>footer{flex-shrink:0}
 #albums{display:flow-root;min-height:174px}
 #albums>.empty{min-height:154px;margin:20px 0 0}
 
-/* Cohesive theme covers: simple gold line symbols on forest green. */
+/* Preserve small source photos instead of stretching them across large columns. */
+#album-detail .photo-grid{grid-template-columns:repeat(auto-fill,minmax(150px,206px));align-items:start}
+#album-detail .photo-grid button{aspect-ratio:1}
+#album-detail .photo-grid img{width:100%;height:100%;aspect-ratio:1;object-fit:contain}
+
+/* Matching topic symbols and bounded album covers. */
 .cover.topic-symbol{display:grid;place-items:center;height:280px;overflow:hidden;border-radius:24px;background:radial-gradient(ellipse at top right,#547c61,#173b32 75%);box-shadow:none}
 .topic-symbol svg{display:block;width:160px;height:160px;fill:none;stroke:#e6d3a4;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.album-grid .album{min-width:0}
+.album-grid .album>img{display:block;width:100%;height:180px;object-fit:cover}
 @media(max-width:760px){.cover.topic-symbol{height:240px}}
