@@ -1,21 +1,24 @@
-# Álbuns da igreja
+# Fotografias da igreja
 
-Cada tema tem uma página em galeria/. Os dados dos eventos ficam em galeria/albums.json.
-Não foram criados eventos fictícios: a lista começa vazia. As imagens de IA existentes são apenas capas de tema.
+A galeria mostra diretamente as fotografias de cada tema, sem obrigar a abrir outro álbum.
 
-Para publicar um álbum, adicione fotografias aprovadas em assets/albums/ e acrescente um objeto à lista "albums":
+Temas disponíveis:
+- cultos-celebracoes: cultos, aniversários e celebrações.
+- momentos-comunhao: refeições, passeios, convívios e encontros.
+- batismo: fotografias de batismos.
+
+Adicione as fotografias em assets/albums/ e registe-as em galeria/albums.json:
 {
   "id": "identificador-unico",
-  "topic": "eventos-especiais",
-  "title": "Título real do evento",
-  "date": "2026-11-13",
-  "cover": "../assets/albums/evento/capa.jpg",
+  "topic": "batismo",
+  "title": "Título do conjunto",
+  "cover": "../assets/albums/conjunto/foto-01.jpg",
   "photos": [
-    {"src": "../assets/albums/evento/foto-01.jpg", "alt": "Descrição da fotografia"}
+    {"src": "../assets/albums/conjunto/foto-01.jpg", "alt": "Descrição da fotografia"}
   ]
 }
 
-topic deve ser um dos nomes dos cinco ficheiros HTML, sem extensão.
-date usa AAAA-MM-DD. Os álbuns são apresentados do mais recente para o mais antigo.
-Use caminhos relativos com ../assets/ para as imagens. Cada álbum pode ser aberto através de ?album=identificador-unico.
-Os visitantes podem ampliar fotografias, fechar com o botão ou Escape e regressar à página inicial.
+Não é necessário indicar data. Os conjuntos são apresentados na ordem do ficheiro.
+Os temas antigos Comunidade e Vida da igreja redirecionam para Momentos de comunhão.
+Eventos especiais redireciona para Cultos e celebrações.
+As fotografias podem ser ampliadas e fechadas com o botão ou Escape.
