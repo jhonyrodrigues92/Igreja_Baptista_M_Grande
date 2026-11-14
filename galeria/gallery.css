@@ -12,3 +12,8 @@ body>header,body>footer{flex-shrink:0}
 /* Match loading and empty card geometry from the first paint. */
 #albums{display:flow-root;min-height:174px}
 #albums>.empty{min-height:154px;margin:20px 0 0}
+
+/* Cohesive theme covers: simple gold line symbols on forest green. */
+.cover.topic-symbol{display:grid;place-items:center;height:280px;overflow:hidden;border-radius:24px;background:radial-gradient(ellipse at top right,#547c61,#173b32 75%);box-shadow:none}
+.topic-symbol svg{display:block;width:160px;height:160px;fill:none;stroke:#e6d3a4;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:760px){.cover.topic-symbol{height:240px}}
