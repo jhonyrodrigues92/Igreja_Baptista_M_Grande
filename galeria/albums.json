@@ -1,3 +1,45 @@
 {
-  "albums": []
+  "albums": [
+    {
+      "id": "culto-de-batismo",
+      "topic": "batismo",
+      "title": "Culto de Batismo",
+      "date": "",
+      "cover": "../assets/albums/culto-de-batismo/foto-01.png",
+      "photos": [
+        {
+          "src": "../assets/albums/culto-de-batismo/foto-01.png",
+          "alt": "Culto de Batismo — fotografia 1"
+        },
+        {
+          "src": "../assets/albums/culto-de-batismo/foto-02.png",
+          "alt": "Culto de Batismo — fotografia 2"
+        },
+        {
+          "src": "../assets/albums/culto-de-batismo/foto-03.png",
+          "alt": "Culto de Batismo — fotografia 3"
+        },
+        {
+          "src": "../assets/albums/culto-de-batismo/foto-04.png",
+          "alt": "Culto de Batismo — fotografia 4"
+        },
+        {
+          "src": "../assets/albums/culto-de-batismo/foto-05.png",
+          "alt": "Culto de Batismo — fotografia 5"
+        },
+        {
+          "src": "../assets/albums/culto-de-batismo/foto-06.png",
+          "alt": "Culto de Batismo — fotografia 6"
+        },
+        {
+          "src": "../assets/albums/culto-de-batismo/foto-07.png",
+          "alt": "Culto de Batismo — fotografia 7"
+        },
+        {
+          "src": "../assets/albums/culto-de-batismo/foto-08.png",
+          "alt": "Culto de Batismo — fotografia 8"
+        }
+      ]
+    }
+  ]
 }

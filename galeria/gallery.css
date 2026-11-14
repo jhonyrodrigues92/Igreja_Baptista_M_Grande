@@ -12,3 +12,8 @@ body>header,body>footer{flex-shrink:0}
 /* Match loading and empty card geometry from the first paint. */
 #albums{display:flow-root;min-height:174px}
 #albums>.empty{min-height:154px;margin:20px 0 0}
+
+/* Preserve small source photos instead of stretching them across large columns. */
+#album-detail .photo-grid{grid-template-columns:repeat(auto-fill,minmax(150px,206px));align-items:start}
+#album-detail .photo-grid button{aspect-ratio:1}
+#album-detail .photo-grid img{width:100%;height:100%;aspect-ratio:1;object-fit:contain}
