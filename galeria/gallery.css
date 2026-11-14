@@ -24,3 +24,9 @@ body>header,body>footer{flex-shrink:0}
 .album-grid .album{min-width:0}
 .album-grid .album>img{display:block;width:100%;height:180px;object-fit:cover}
 @media(max-width:760px){.cover.topic-symbol{height:240px}}
+
+/* Restore the grid overridden by the general #albums loading container. */
+#albums.album-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,240px));gap:20px;align-items:start}
+#albums.album-grid>a.album{display:block;width:100%;min-width:0}
+#albums.album-grid>a.album>img{display:block;width:100%;height:206px;aspect-ratio:auto;object-fit:contain;background:#edf1e8}
+@media(max-width:420px){#albums.album-grid{grid-template-columns:minmax(0,240px)}}
