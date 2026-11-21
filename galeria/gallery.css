@@ -24,3 +24,6 @@ body>header,body>footer{flex-shrink:0}
 .album-grid .album{min-width:0}
 .album-grid .album>img{display:block;width:100%;height:180px;object-fit:cover}
 @media(max-width:760px){.cover.topic-symbol{height:240px}}
+
+/* Centra as fotos quando, em ecrãs estreitos, só há espaço para uma coluna. */
+#album-detail .photo-grid{justify-content:center;justify-items:center}
