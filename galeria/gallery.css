@@ -33,6 +33,6 @@ body>header,body>footer{flex-shrink:0}
 .language-switcher button{display:inline-flex;align-items:center;justify-content:center;gap:4px;min-width:42px;min-height:34px;padding:4px 7px;border:1px solid #ffffff65;border-radius:999px;background:#ffffff12;color:#fff;font:700 .68rem/1 system-ui,sans-serif;cursor:pointer}
 .language-switcher button:hover,.language-switcher button:focus-visible{background:#ffffff26;outline:2px solid var(--gold);outline-offset:2px}
 .language-switcher button.is-active{background:#f0e2b6;border-color:#f0e2b6;color:#173b32}
-.language-flag{font-size:1rem;line-height:1}.language-code{letter-spacing:.025em}
+.language-flag{display:block;width:20px;height:14px;flex:none;overflow:hidden;border-radius:2px;box-shadow:0 0 0 1px #173b3222}.language-code{letter-spacing:.025em}
 html[lang=hi] body,html[lang=hi] button{font-family:"Noto Sans Devanagari","Nirmala UI","Mangal",system-ui,sans-serif}
 @media(max-width:760px){.top .wrap{flex-wrap:wrap}.language-switcher{width:100%;justify-content:center}.top .back{max-width:none}}
